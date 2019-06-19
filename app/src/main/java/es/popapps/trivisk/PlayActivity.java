@@ -33,15 +33,23 @@ public class PlayActivity extends AppCompatActivity {
     private List<GamesModel> getData(){
         GamesModel game1 = new GamesModel();
         game1.setGameName("Partida Animales");
+        game1.setGameSubtitle("Subtitulo Animal");
+        game1.setGameImg(R.id.imgFilm);
 
         GamesModel game2 = new GamesModel();
         game2.setGameName("Partida Arte");
+        game2.setGameSubtitle("Subtitulo Cuadro");
+        game2.setGameImg(R.id.imgFilm);
 
         GamesModel game3 = new GamesModel();
         game3.setGameName("Partida Coches");
+        game3.setGameSubtitle("Subtitulo Ford");
+        game3.setGameImg(R.id.imgFilm);
 
         GamesModel game4 = new GamesModel();
         game4.setGameName("Partida Series");
+        game4.setGameSubtitle("Subtitulo Dracula");
+        game4.setGameImg(R.id.imgFilm);
 
         List<GamesModel> listaPartidas = new ArrayList<>();
         listaPartidas.add(game1);

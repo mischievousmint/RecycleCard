@@ -27,6 +27,8 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.MyGameRow> {
     public void onBindViewHolder(MyGameRow holder, int position) {  // Pinta celda
         String incomingTitle = userModelList.get(position).getGameName();  // Obtengo el String que quiero pintar en la celda
         holder.name.setText(incomingTitle);
+        String incomingSubtitle = userModelList.get(position).getGameSubtitle();
+        holder.subtitle.setText(incomingSubtitle);
     }
 
     @Override
@@ -36,11 +38,14 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.MyGameRow> {
 
     static class MyGameRow extends RecyclerView.ViewHolder {  // Crea mi vista celda, la cual tiene un TextView
         private TextView name;
+        private TextView subtitle;
 
         MyGameRow(View v) {
             super(v);
-            name = v.findViewById(R.id.tvTitle);
+            name = v.findViewById(R.id.tvTitle);;
+            subtitle = v.findViewById(R.id.tvSubtitle);
         }
+
     }
 
 }
