@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -26,9 +27,12 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.MyGameRow> {
     @Override
     public void onBindViewHolder(MyGameRow holder, int position) {  // Pinta celda
         String incomingTitle = userModelList.get(position).getGameName();  // Obtengo el String que quiero pintar en la celda
-        holder.name.setText(incomingTitle);
         String incomingSubtitle = userModelList.get(position).getGameSubtitle();
+        int incomingImage = userModelList.get(position).getGameImg();
+
+        holder.name.setText(incomingTitle);
         holder.subtitle.setText(incomingSubtitle);
+        holder.image.setImageResource(incomingImage);
     }
 
     @Override
@@ -39,11 +43,13 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.MyGameRow> {
     static class MyGameRow extends RecyclerView.ViewHolder {  // Crea mi vista celda, la cual tiene un TextView
         private TextView name;
         private TextView subtitle;
+        private ImageView image;
 
         MyGameRow(View v) {
             super(v);
             name = v.findViewById(R.id.tvTitle);;
             subtitle = v.findViewById(R.id.tvSubtitle);
+            image = v.findViewById(R.id.imgFilm);
         }
 
     }
