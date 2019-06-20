@@ -115,7 +115,7 @@
         app:layout_constraintStart_toStartOf="@+id/btnPlay"
         app:layout_constraintTop_toBottomOf="@+id/btnPlay"/>
 
-    <ImageView
+    <Button
         android:id="@+id/btnSettings"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -123,6 +123,6 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_prefs"/>
+        android:background="@drawable/ic_prefs"/>
 
 </android.support.constraint.ConstraintLayout>

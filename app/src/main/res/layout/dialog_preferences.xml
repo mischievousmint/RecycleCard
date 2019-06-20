@@ -1,24 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:angle="90"
+    android:startColor="#FFFF0000"
+    android:endColor="#FF00FF00"
+    android:type="linear"
+    android:background="@drawable/customshape"
     tools:context=".MainActivity">
 
 
     <TextView
         android:id="@+id/tvSettings"
-        android:layout_width="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
         android:text="SETTINGS"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:textStyle="bold"
+        android:textSize="50sp"/>
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/llMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_music_on"/>
+
+        <SeekBar
+            android:id="@+id/seekMusic"
+            android:layout_weight="1"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tvMusic"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bt_settings_box"
+            android:textColor="#FFFF"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMusicLabel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Music"
+        android:textColor="#FFFF"/>
+
+    <LinearLayout
+        android:id="@+id/llSound"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_sound_on"/>
+
+        <SeekBar
+            android:id="@+id/seekSound"
+            android:layout_weight="1"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:outlineSpotShadowColor="#FFFF"/>
+
+        <TextView
+            android:id="@+id/tvSound"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_settings_box"
+            android:textColor="#FFFF"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSoundLabel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Sound"
+        android:textColor="#FFFF"/>
+
+</LinearLayout>
