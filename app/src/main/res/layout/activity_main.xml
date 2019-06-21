@@ -13,11 +13,11 @@
         android:layout_width="61dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="DESIGN"
+        android:text="CREATE"
         android:textColor="#FFF"
-        app:layout_constraintEnd_toEndOf="@+id/btnDesign"
-        app:layout_constraintStart_toStartOf="@+id/btnDesign"
-        app:layout_constraintTop_toBottomOf="@+id/btnDesign"/>
+        app:layout_constraintEnd_toEndOf="@+id/btnCreate"
+        app:layout_constraintStart_toStartOf="@+id/btnCreate"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreate"/>
 
     <ImageView
         android:id="@+id/imageView"
@@ -47,7 +47,7 @@
         app:layout_constraintGuide_percent="0.6"/>
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imgLogo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -58,9 +58,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/logo"/>
+        android:background="@drawable/anim_home_old"/>
 
-    <ImageView
+    <Button
         android:id="@+id/btnPlay"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -69,21 +69,21 @@
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:srcCompat="@drawable/bt_play"/>
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+        android:background="@drawable/bt_play"/>
 
-    <ImageView
-        android:id="@+id/btnDesign"
+    <Button
+        android:id="@+id/btnCreate"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/btnPlay"
         app:layout_constraintStart_toEndOf="@+id/btnPlay"
         app:layout_constraintTop_toTopOf="@+id/btnPlay"
-        app:srcCompat="@drawable/bt_create"/>
+        android:background="@drawable/bt_create" />
 
-    <ImageView
-        android:id="@+id/btnShop"
+    <Button
+        android:id="@+id/btnBuy"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginTop="8dp"
@@ -91,18 +91,18 @@
         app:layout_constraintBottom_toBottomOf="@+id/btnPlay"
         app:layout_constraintEnd_toStartOf="@+id/btnPlay"
         app:layout_constraintTop_toTopOf="@+id/btnPlay"
-        app:srcCompat="@drawable/bt_buy"/>
+        android:background="@drawable/bt_buy"/>
 
     <TextView
         android:id="@+id/te"
         android:layout_width="61dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="SHOP"
+        android:text="BUY"
         android:textColor="#FFF"
-        app:layout_constraintEnd_toEndOf="@+id/btnShop"
-        app:layout_constraintStart_toStartOf="@+id/btnShop"
-        app:layout_constraintTop_toBottomOf="@+id/btnShop"/>
+        app:layout_constraintEnd_toEndOf="@+id/btnBuy"
+        app:layout_constraintStart_toStartOf="@+id/btnBuy"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuy"/>
 
     <TextView
         android:id="@+id/te2"

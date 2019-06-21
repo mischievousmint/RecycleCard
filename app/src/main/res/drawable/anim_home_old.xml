@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="true">
+	
+	<item android:duration="50" android:drawable="@drawable/corazon_01"/>
+	<item android:duration="50" android:drawable="@drawable/corazon_02"/>
+	<item android:duration="50" android:drawable="@drawable/corazon_03"/>
+	<item android:duration="50" android:drawable="@drawable/corazon_04"/>
+	<item android:duration="50" android:drawable="@drawable/corazon_05"/>
+	<item android:duration="50" android:drawable="@drawable/corazon_06"/>
+	<item android:duration="50" android:drawable="@drawable/corazon_07"/>
+	<item android:duration="50" android:drawable="@drawable/corazon_08"/>
+	<item android:duration="50" android:drawable="@drawable/corazon_09"/>
+	<item android:duration="50" android:drawable="@drawable/corazon_10"/>
+
+
+</animation-list>
